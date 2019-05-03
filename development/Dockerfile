@@ -80,6 +80,6 @@ RUN set -ex ;\
     apk del --no-cache --purge .build-deps ;\
     rm -rf /var/cache/apk/*
   
-COPY .zsh/.zshrc /root/.zshrc
+COPY .zshrc /root/.zshrc
 
 CMD [ "python" ]
