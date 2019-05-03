@@ -1,0 +1,29 @@
+sudo: required
+services:
+  - docker
+
+matrix:
+  fast_finish: true
+
+before_install:
+  - bash ./.travis/main.sh
+
+env:
+  global:
+    - base_image='fspnetwork/infrastructure'
+    - repo='fspnetwork/python'
+    - latest='3.7'
+  matrix:
+    - version='3.7' type=''
+    - version='3.7' type='.2'
+    - version='development' type=''
+
+before_script:
+  - sudo docker pull $base_image
+
+script:
+  - sudo docker build -t $repo:$version$type $version
+  - echo 'print("Success")' | sudo docker run -i --rm $repo:$version$type
+
+after_success:
+- bash ./.travis/push.sh
