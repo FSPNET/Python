@@ -10,7 +10,7 @@
 
 ## Supported tags
 
-- [`latest`, `3.7`, `3.7.2` (Dockerfile)](https://github.com/FSPNET/Python/blob/master/3.7/Dockerfile)
+- [`latest`, `3.7`, `3.7.4` (Dockerfile)](https://github.com/FSPNET/Python/blob/master/3.7/Dockerfile)
 - [`development`, `development` (development)](https://github.com/FSPNET/Python/blob/master/development/Dockerfile)
 
 **Notes:**
