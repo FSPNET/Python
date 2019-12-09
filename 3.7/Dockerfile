@@ -1,6 +1,6 @@
 FROM fspnetwork/infrastructure
 
-ENV PYTHON_VERSION=3.7.4 \
+ENV PYTHON_VERSION=3.7.5 \
     PYTHON_PATH=/usr/local/bin/ \
     PATH="/usr/local/lib/python$PYTHON_VERSION/bin/:/usr/local/lib/pyenv/versions/$PYTHON_VERSION/bin:${PATH}" \
     PACKAGES="\
